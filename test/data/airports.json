@@ -1,0 +1,20 @@
+[
+  {
+    "code": "DXB",
+    "name": "Dubai Airport",
+    "countryCode": "ARE",
+    "timezone": "Asia/Dubai"
+  },
+  {
+    "code": "KWI",
+    "name": "Kuwait International Airport",
+    "countryCode": "KWT",
+    "timezone": "Asia/Kuwait"
+  },
+  {
+    "code": "LGW",
+    "name": "London Gatwick Airport",
+    "countryCode": "GBR",
+    "timezone": "Europe/London"
+  }
+]

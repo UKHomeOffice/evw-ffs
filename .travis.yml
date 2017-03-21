@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- '4'
+- '5'
+- '6'
+deploy:
+  provider: npm
+  email: davethompson21@gmail.com
+  api_key:
+    secure: VvtY7aSI/OxOmuxyrxbLCd7shhTjAk+YbxaJCRHOyGh1peQGD/hyFC7YO/X/Pp8ngvtAneSJF7J3Zc7YGpY2uMst+cPBf0nFTUayWQgI4B+1KciPM+4tyTH0iLkqy8VgpYkZANL3fpzRPOxz6q6QNBt2VRGzscHfAqUxTuVjq8jIv1s/Me6HMvgNLWbtRJomDuvHMNdqfzGYZBORWhSHJtyCd6RVpIEko1wsAxuOQsapv3v5pyUdYXl3a1DuUgaArqDdIerjgDanXPNRntlsSTUn1Zk7+1hotYv5mWJhpdK6pNHrY9VLurOw/pezfMqGs985G8kJXpmDJNOMSD/DrtfvsD8nS63NMEoniiYvr1UWapkXML6v5mOn+gNlYVHQZonTxucJRu/Ds68rWqijZVmCqYUlHwjfIZEB7piR7hGIagLfKznf5t2AriWyxp4pny0FLNPdJpsrtf23MJ27iUwqm3hfrSq5WW/eTplpnTSf9l09t3C5PPzeKTrYdasIZUAOw3y5J7b31TFNM+B19bfUGzhn2Wexc9BS45id5JzRqA0NiFYeap7/n8hkxo+GZeHgRTV8nBiyTCtZS1VrhlRfLNmhansa2xx2tESF8ucDwhN2p6XSaLN0bdric+gw7h7d0U9lI+oLr393EySPtcGPw6QlTX1Cl7CnyCrrQlo=
+  on:
+    tags: true
+    repo: UKHomeOffice/evw-ffs

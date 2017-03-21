@@ -1,0 +1,36 @@
+{
+  "name": "evw-ffs",
+  "version": "0.1.0",
+  "description": "EVW flight forecast service integration",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint .",
+    "test": "./node_modules/.bin/mocha",
+    "cover": "istanbul cover node_modules/.bin/_mocha --report cobertura --report html"
+  },
+  "dependencies": {
+    "moment": "^2.13.0",
+    "moment-timezone": "^0.5.7",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "colour": "^0.7.1",
+    "dyson": "^0.10.0",
+    "eslint": "^2.11.1",
+    "eslint-config-homeoffice": "^1.0.0",
+    "eslint-plugin-filenames": "^1.0.0",
+    "eslint-plugin-mocha": "^3.0.0",
+    "eslint-plugin-one-variable-per-var": "0.0.3",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "sinon": "^2.1.0",
+    "sinon-as-promised": "^4.0.2",
+    "sinon-chai": "^2.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UKHomeOffice/evw-ffs"
+  },
+}
