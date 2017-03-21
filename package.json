@@ -32,5 +32,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/UKHomeOffice/evw-ffs"
-  }
+  },
+  "bin": "./bin/evw-ffs.js"
 }
