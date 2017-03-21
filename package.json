@@ -14,8 +14,8 @@
     "request": "^2.81.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "chai-as-promised": "^6.0.0",
+    "chai": "^3.0.0",
+    "chai-as-promised": "^5.3.0",
     "colour": "^0.7.1",
     "dyson": "^0.10.0",
     "eslint": "^2.11.1",
@@ -25,12 +25,15 @@
     "eslint-plugin-one-variable-per-var": "0.0.3",
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
-    "sinon": "^2.1.0",
+    "sinon": "^1.15.3",
     "sinon-as-promised": "^4.0.2",
-    "sinon-chai": "^2.9.0"
+    "sinon-chai": "^2.8.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/UKHomeOffice/evw-ffs"
+  },
+  "bin": {
+    "evw-ffs": "./bin/evw-ffs.js"
   }
 }
