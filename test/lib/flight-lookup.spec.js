@@ -75,14 +75,6 @@ describe('lib/flight-lookup', function() {
 
   describe('#mapFlight', function() {
     let flightData;
-    let sessionModel = {
-      get: function (key) {
-        return this.attributes[key];
-      },
-      attributes: {
-        'plane-flight-number': 'ku101'
-      }
-    };
     let dataLists = {
       countries: countries,
       airports: airports
@@ -95,8 +87,8 @@ describe('lib/flight-lookup', function() {
     });
 
     it('formats the data from the api into the correct format to use in the app', function() {
-      flightLookup.mapFlight(flightData, sessionModel, dataLists).should.deep.equal({
-        flightNumber: 'KU101',
+      flightLookup.mapFlight(flightData, dataLists).should.deep.equal({
+        flightNumber: 'KU0101',
         departureAirport: 'Dubai Airport',
         inwardDeparturePortPlaneCode: 'DXB',
         inwardDepartureCountryPlane: 'United Arab Emirates',
