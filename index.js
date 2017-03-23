@@ -1,5 +1,3 @@
 'use strict';
 
-module.exports = {
-  flightLookup: require('./lib/flight-lookup')
-};
+module.exports = require('./lib/flight-lookup');
