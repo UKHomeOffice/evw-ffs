@@ -3,10 +3,10 @@
 var tpl = function template (params, query) {
   let departureCountryCode = 'AE';
   let departurePort = 'DXB';
-  let departureTime = '14:55';
+  let departureTime = '14:35';
   let departureTimezone = 'Asia/Dubai';
   let arrivalPort = 'LGW';
-  let arrivalTime = '19:45';
+  let arrivalTime = '18:25';
   if (query.flightNumber === 'BI0097') {
     arrivalPort = 'LHR';
     arrivalTime = '06:25';
