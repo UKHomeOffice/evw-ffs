@@ -39,14 +39,14 @@ describe('lib/flight-lookup', function() {
           port: 'DXB',
           timezone: 'Asia/Dubai',
           date: '2016-08-09',
-          time: '14:55'
+          time: '14:35'
         },
         arrival: {
           country: 'GBR',
           port: 'LGW',
           timezone: 'Europe/London',
           date: '2016-08-09',
-          time: '19:45'
+          time: '18:25'
         }
       });
     });
@@ -98,9 +98,9 @@ describe('lib/flight-lookup', function() {
         departureDatePlaneMonth: '08',
         departureDatePlaneYear: '2016',
         departureDateRaw: '2016-08-09',
-        departureTime: '14:55',
+        departureTime: '14:35',
         departureTimePlaneHour: '14',
-        departureTimePlaneMinutes: '55',
+        departureTimePlaneMinutes: '35',
         departureTimezone: 'Asia/Dubai',
         arrivalAirport: 'London Gatwick Airport',
         portOfArrivalPlaneCode: 'LGW',
@@ -110,9 +110,9 @@ describe('lib/flight-lookup', function() {
         arrivalDatePlaneDay: '09',
         arrivalDatePlaneMonth: '08',
         arrivalDatePlaneYear: '2016',
-        arrivalTime: '19:45',
-        arrivalTimePlaneHour: '19',
-        arrivalTimePlaneMinutes: '45',
+        arrivalTime: '18:25',
+        arrivalTimePlaneHour: '18',
+        arrivalTimePlaneMinutes: '25',
       });
     });
   });
