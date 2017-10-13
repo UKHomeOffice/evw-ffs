@@ -3,6 +3,10 @@
   "version": "1.0.1",
   "description": "EVW flight forecast service integration",
   "main": "index.js",
+  "engines": {
+    "node": "^6.11.4",
+    "npm": "^5.4.2"
+  },
   "scripts": {
     "lint": "./node_modules/.bin/eslint .",
     "test": "./node_modules/.bin/mocha",
