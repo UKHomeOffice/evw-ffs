@@ -1,6 +1,7 @@
 'use strict';
 
 var tpl = function template (params, query) {
+  let flightNumber = query.flightNumber;
   let departureCountryCode = 'AE';
   let departurePort = 'DXB';
   let departureTime = '14:35';
@@ -19,8 +20,17 @@ var tpl = function template (params, query) {
     arrivalPort = 'BHD';
     arrivalTime = '16:30';
   }
+  if (query.flightNumber.toUpperCase() === 'UAE17') {
+    flightNumber = 'EK17';
+    departureCountryCode = 'AE';
+    departurePort = 'DXB';
+    departureTime = '14:35';
+    departureTimezone = 'Asia/Dubai';
+    arrivalPort = 'LGW';
+    arrivalTime = '18:25';
+  }  
   return {
-    flightNumber: query.flightNumber,
+    flightNumber: flightNumber,
     departure: {
       country: departureCountryCode,
       port: departurePort,
