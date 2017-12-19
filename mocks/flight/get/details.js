@@ -24,10 +24,10 @@ var tpl = function template (params, query) {
     flightNumber = 'EK17';
     departureCountryCode = 'AE';
     departurePort = 'DXB';
-    departureTime = '14:35';
+    departureTime = '07:15';
     departureTimezone = 'Asia/Dubai';
-    arrivalPort = 'LGW';
-    arrivalTime = '18:25';
+    arrivalPort = 'MAN';
+    arrivalTime = '11:20';
   }  
   return {
     flightNumber: flightNumber,
