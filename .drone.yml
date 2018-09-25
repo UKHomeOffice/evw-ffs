@@ -1,0 +1,15 @@
+pipeline:
+
+  test:
+    image: node:10
+    secrets:
+      - npm_auth_token
+    commands:
+      - npm i
+      - npm test
+    when:
+      event: [push, pull_request, tag]
+
+matrix:
+  NPM_AUTH_USERNAME:
+    - regt-build-bot
