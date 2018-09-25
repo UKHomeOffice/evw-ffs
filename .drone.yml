@@ -3,8 +3,8 @@ pipeline:
   test:
     image: node:6
     secrets:
-      - npm_auth_token
-      - npm_registry
+      - npm_config__auth
+      - npm_config_registry
     commands:
       - npm i
       - npm test
@@ -14,8 +14,8 @@ pipeline:
   publish_to_artifactory:
     image: node:6
     secrets:
-      - npm_auth_token
-      - npm_registry
+      - npm_config__auth
+      - npm_config_registry
     commands:
       - npm publish
     when:
