@@ -17,6 +17,7 @@ pipeline:
       - npm_auth_token
       - npm_registry
     commands:
+      - npm login
       - npm publish
     when:
       event: [tag]
