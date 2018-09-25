@@ -11,7 +11,7 @@ pipeline:
   publish_to_artifactory:
     image: node:6
     secrets:
-      - npm_auth_token
+      - npm_config_auth
     commands:
       - npm adduser
       - npm publish
@@ -19,5 +19,5 @@ pipeline:
       event: [tag]
 
 matrix:
-  NPM_AUTH_USERNAME:
+  NPM_CONFIG_USERNAME:
     - regt-build-bot
