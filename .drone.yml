@@ -1,7 +1,7 @@
 pipeline:
 
   test:
-    image: node:6
+    image: node:10
     commands:
       - npm i
       - npm test
@@ -9,7 +9,7 @@ pipeline:
       event: [push, pull_request, tag]
 
   publish_to_artifactory:
-    image: node:6
+    image: node:10
     secrets:
       - npm_config_auth
     commands:
