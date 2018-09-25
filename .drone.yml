@@ -13,7 +13,6 @@ pipeline:
     secrets:
       - npm_config_auth
     commands:
-      - npm adduser
       - npm publish
     when:
       event: [tag]
