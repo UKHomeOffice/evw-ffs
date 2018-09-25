@@ -1,6 +1,6 @@
 {
   "name": "evw-ffs",
-  "version": "2.0.2_testing_drone_1",
+  "version": "2.0.5",
   "description": "EVW flight forecast service integration",
   "main": "index.js",
   "engines": {
