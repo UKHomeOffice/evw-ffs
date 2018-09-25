@@ -2,6 +2,9 @@ pipeline:
 
   test:
     image: node:10
+    secrets:
+      - npm_config_auth
+      - npm_registry
     commands:
       - npm i
       - npm test
