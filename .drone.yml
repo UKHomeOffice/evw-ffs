@@ -11,7 +11,7 @@ pipeline:
       - npm i
       - npm test
     when:
-      event: [push, pull_request, tag]
+      event: [push, tag]
 
   publish_to_artifactory:
     image: node:6
