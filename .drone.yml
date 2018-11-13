@@ -8,6 +8,7 @@ pipeline:
     environment:
       - NPM_CONFIG_ALWAYS_AUTH=true
     commands:
+      - env
       - npm i
       - npm test
     when:
